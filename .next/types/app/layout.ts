@@ -2,7 +2,7 @@
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-type TEntry = typeof entry
+type TEntry = typeof import('../../../app/layout.js')
 
 // Check that the entry is a valid entry
 checkFields<Diff<{
@@ -14,7 +14,7 @@ checkFields<Diff<{
   dynamicParams?: boolean
   fetchCache?: 'auto' | 'force-no-store' | 'only-no-store' | 'default-no-store' | 'default-cache' | 'only-cache' | 'force-cache'
   preferredRegion?: 'auto' | 'global' | 'home' | string | string[]
-  
+  runtime?: 'nodejs' | 'experimental-edge' | 'edge'
   
   metadata?: any
   generateMetadata?: Function
