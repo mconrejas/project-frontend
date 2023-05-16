@@ -16,7 +16,7 @@ const PasswordInput: React.FC = () => {
   };
 
   return (
-    <div className="flex items-center">
+    <div className="flex  absolute items-center justify-between">
       <input
         type={showPassword ? 'text' : 'password'}
         value={password}
