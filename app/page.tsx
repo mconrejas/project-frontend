@@ -1,5 +1,6 @@
 import Login from "./components/Login";
-import Form from "./components/Form"
+import Form from "./components/form/Form"
+import Link from "next/link"
 
 function App() {
     return (
@@ -8,7 +9,7 @@ function App() {
                <Login/>
                {/* <Form/> */}
         </div>  
-        
+            <Link href="app/components/SignIn"> FORM</Link>
          
         </div>
             

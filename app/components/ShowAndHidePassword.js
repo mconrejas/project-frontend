@@ -32,3 +32,5 @@ function ShowAndHidePassword(){
       
     )
 }
+
+export default ShowAndHidePassword;

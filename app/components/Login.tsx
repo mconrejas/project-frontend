@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import {AiFillEyeInvisible, AiFillEye} from 'react-icons/ai';
+import  { useRef, useState, useEffect } from "react";
+// import {AiFillEyeInvisible, AiFillEye} from 'react-icons/ai';
 
 
 
-export default function Login() {
+const Login = () => {
 
     // const [isPasswordVisible, setIsPasswordVisible] = useState(false);
     // function togglePasswordVisibility() {
@@ -12,26 +12,24 @@ export default function Login() {
     return (
     
      
-    <form className="bg-gradient-to-tr from-violet-500 to-orange-500 shadow-md rounded w-15 px-2 pt-5 pb-5 mb-5 space-y-5 ">
-                    <div className="font-bold text-center text-2xl">LOGIN</div>
+    <form className="bg-gradient-to-tr from-violet-500 to-blue-500 shadow-md rounded w-small px-2 pt-5 pb-5 mb-8 space-y-7 ">
+                    <div className="font-bold text-center text-2xl">Sign In</div>
                     <div className="mb-3">
               
                     <label className="block text-gray-900 text-sm font-semibold mb-2" >Username</label>
-                    <input className="text-center shadow appearance-none placeholder border border-red-500 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Enter Username"></input>
+                    <input className="text-center shadow appearance-none placeholder border border-red-500 rounded w-small py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username"></input>
                 
                     </div>
-            
+             
 
-            <div className=" mx-auto relative">           
+            <div className="row mb-4 mx-auto relative">           
                     <label className="block text-gray-900 text-sm font-semibold mb-2" >Password</label>
-                    <input className="text-md  text-center shadow appearance-none placeholder border border-red-500 rounded w-full py-2 px-10 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="Password"type="text" placeholder="Password"></input>
-                     
-                    <div className="text-2xl absolute bottom-1 right-1 ">                           
-                            < AiFillEyeInvisible/> 
-                    </div>       
+                    <div className="col=sm-1">
+                     <button type="button" className="btn btn-primary">show</button>
+
+                    </div>
+                    <input className="text-md  text-center shadow appearance-none placeholder border border-red-500 rounded w-small py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="Password"type="text" placeholder="Password"></input>             
             </div>                   
-                     
- 
             <div className="flex items-center justify-between">     
                 <div className="flex items-center">
                     <input type="checkbox" className="h-4 m-4 text-blue-300 rounded"/>
@@ -52,3 +50,4 @@ export default function Login() {
 
 )
 };
+export default Login
