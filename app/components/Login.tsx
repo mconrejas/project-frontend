@@ -2,17 +2,16 @@ import  { useRef, useState, useEffect } from "react";
 // import {AiFillEyeInvisible, AiFillEye} from 'react-icons/ai';
 
 
-
 const Login = () => {
-
+ 
     // const [isPasswordVisible, setIsPasswordVisible] = useState(false);
     // function togglePasswordVisibility() {
     //     setIsPasswordVisible((prevState) => !prevState);
     
     return (
-    
-     
-    <form className="bg-gradient-to-tr from-violet-500 to-blue-500 shadow-md rounded w-small px-2 pt-5 pb-5 mb-8 space-y-7 ">
+           
+
+    <form className="bg-gradient-to-tr from-violet-500 to-blue-900 shadow-md rounded w-small px-2 pt-5 pb-5 mb-8 space-y-7 ">
                     <div className="font-bold text-center text-2xl">Sign In</div>
                     <div className="mb-3">
               
@@ -22,13 +21,10 @@ const Login = () => {
                     </div>
              
 
-            <div className="row mb-4 mx-auto relative">           
+            <div className=" mx-auto relative">           
                     <label className="block text-gray-900 text-sm font-semibold mb-2" >Password</label>
-                    <div className="col=sm-1">
-                     <button type="button" className="btn btn-primary">show</button>
-
-                    </div>
                     <input className="text-md  text-center shadow appearance-none placeholder border border-red-500 rounded w-small py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="Password"type="text" placeholder="Password"></input>             
+            
             </div>                   
             <div className="flex items-center justify-between">     
                 <div className="flex items-center">
