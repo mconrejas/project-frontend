@@ -1,5 +1,4 @@
 import Login from "./components/Login";
-import Form from "./components/form/Form"
 import Link from "next/link"
 
 function App() {
@@ -8,9 +7,10 @@ function App() {
             <div className="w-full flex items-center justify-center lg:w-full">
                <Login/>
                {/* <Form/> */}
-        </div>  
+            </div>
+            <div className=" text-center text-white 500">  
             <Link href="app/components/SignIn"> FORM</Link>
-         
+            </div>  
         </div>
             
         
