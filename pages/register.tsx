@@ -1,5 +1,8 @@
 import Head from "next/head"
 
+import 'tailwindcss/tailwind.css'
+
+
 
 
 export default function Register()
