@@ -1,5 +1,6 @@
-import styles from'../styles/Layout.modules.css'
+import styles from '../styles/Layout.module.css'
 import 'tailwindcss/tailwind.css'
+
 
 
 export default function Design({children}){
@@ -7,7 +8,7 @@ export default function Design({children}){
 return(
  <div className="flex h-screen bg-blue-400">
     <div className="m-auto bg-slate-50 rounded-md w-3/5 h-3/4 grid lg:grid-cols-2">
-          <div className={StyleSheet.imgStyle}>
+          <div   className={StyleSheet.imgStyle}>
                 images
          </div>
     

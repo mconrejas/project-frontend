@@ -19,11 +19,10 @@ const Login = () => {
                     <input className="text-center shadow appearance-none placeholder border border-red-500 rounded w-small py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username"></input>
                  </div>
              
-            <link>
-            </link> 
+            
 
             <div className=" mx-auto relative">           
-                    <label className="block text-gray-900 text-sm font-semibold mb-2" >Password</label>
+                    <label className=" block text-gray-900 text-sm font-semibold mb-2" >Password</label>
                     <input className="text-md  text-center shadow appearance-none placeholder border border-red-500 rounded w-small py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="Password"type="text" placeholder="Password"></input>             
                   
             </div>                   
