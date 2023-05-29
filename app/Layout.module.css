@@ -1,0 +1,49 @@
+
+.imgStyle{
+    @apply bg-gradient-to-tr from-blue-500 to-indigo-500 rounded-l-md;
+    position: relative;
+    overflow: hidden;
+}
+
+.imgMountain{
+ background:url('/assets/mountain.png') no-repeat;
+ position: absolute;
+ bottom:0 ;left: 0;right: 0;top: 0;
+ width: 100%;
+ height: 100%;
+ background-size: 50; 
+ background-position: 50% 70px;
+ z-index: 1;
+
+}
+
+.plane_one{
+    background: url('/assets/aeroplane.png') no-repeat;
+    position: absolute;
+    top: 10%; left: 10%; 
+    width: 180px;
+    height: 80px;
+    background-size: contain;
+    z-index: 2;
+    
+}
+
+.plane_two{
+    background: url('/assets/aeroplane2.png') no-repeat;
+    position: absolute;
+    top: 25%; right: 10%;
+    width: 150px;
+    height: 60px;
+    background-size: contain;
+    z-index: 0;
+    animation: plane_two 10.5s ease-in 2.9s infinite;
+}
+
+
+@keyframes plane_two{
+    0%{
+        transform: translateX(290%);
+    }100%{
+        transform: translateX(-250%);
+    }
+}
