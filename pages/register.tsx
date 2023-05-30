@@ -1,6 +1,6 @@
 import Head from "next/head"
-
-
+import Link from 'next/link'
+import Design from '../app/layout/design'
 
 
 
