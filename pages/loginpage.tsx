@@ -5,7 +5,7 @@ import Styles from '/styles/form.module.css';
 import {AiFillEyeInvisible, AiFillEye} from 'react-icons/ai';
 import {useState} from 'react';
 import Image from "next/image";
-import { url } from "inspector";
+
 
 export default function  Login(){
 
@@ -18,9 +18,9 @@ export default function  Login(){
             <title>Login Page</title>
         </Head>
 
-            <section className='w-3/4 mx-auto flex flex-col gap-10'>
+            <section className='w-3/4 mx-auto flex flex-col gap-10 ' >
             <div className="tittle">
-            <h1 className='text-white text-4xl font-bold py-4'>Please Sign In</h1>
+            <h1 className='text-white text-4xl font-bold py-4'>Welcome!</h1>
             </div>
 
             {/*form*/}
@@ -35,12 +35,12 @@ export default function  Login(){
               </div>
               <div className={Styles.input_group}>
                   <input 
-                  type={`${show ? "text":"password"}`}
+                  type={`${show? "text":"password"}`}
                   name="password"
                   placeholder="Password"
                   className={Styles.input_text}
                   />
-                <span className='icon flex items-center px-4'onClick={()=>setShow(!show)}>
+                <span className='icon flex items-center px-2'onClick={()=>setShow(!show)}>
                   <AiFillEye size={25}/>
                 </span>
               </div>
