@@ -718,32 +718,6 @@ self.__RSC_MANIFEST={
         "async": false
       }
     },
-    "(app-client)/./app/components/multifunction.tsx": {
-      "*": {
-        "id": "(sc_client)/./app/components/multifunction.tsx",
-        "name": "*",
-        "chunks": [
-          "app/page:static/chunks/app/page.js"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./app/components/multifunction.tsx",
-        "name": "",
-        "chunks": [
-          "app/page:static/chunks/app/page.js"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./app/components/multifunction.tsx",
-        "name": "default",
-        "chunks": [
-          "app/page:static/chunks/app/page.js"
-        ],
-        "async": false
-      }
-    },
     "(app-client)/./node_modules/next/dist/client/link.js": {
       "*": {
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
@@ -2426,30 +2400,6 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/var/www/newprojectweb/app/components/multifunction.tsx": {
-      "id": "(app-client)/./app/components/multifunction.tsx",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/var/www/newprojectweb/app/components/multifunction.tsx#": {
-      "id": "(app-client)/./app/components/multifunction.tsx",
-      "name": "",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/var/www/newprojectweb/app/components/multifunction.tsx#default": {
-      "id": "(app-client)/./app/components/multifunction.tsx",
-      "name": "default",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
     "/var/www/newprojectweb/node_modules/next/dist/client/link.js": {
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
@@ -2511,21 +2461,6 @@ self.__RSC_MANIFEST={
       "chunks": [
         "static/css/app/layout.css"
       ]
-    },
-    "/var/www/newprojectweb/node_modules/tailwindcss/tailwind.css#": {
-      "id": "./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[15].use[1]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[15].use[2]!./node_modules/tailwindcss/tailwind.css",
-      "name": "default",
-      "chunks": []
-    },
-    "/var/www/newprojectweb/app/Layout.module.css#": {
-      "id": "./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[9].use[1]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[9].use[2]!./app/Layout.module.css",
-      "name": "default",
-      "chunks": []
-    },
-    "/var/www/newprojectweb/styles/form.module.css#": {
-      "id": "./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[9].use[1]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[9].use[2]!./styles/form.module.css",
-      "name": "default",
-      "chunks": []
     }
   }
 }

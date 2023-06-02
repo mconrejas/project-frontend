@@ -1,24 +1,29 @@
-"use client"
+'Use Client'
 
-import Link from "next/link";
-import { useState } from "react"
+import Link from "next/link"
+import {useState} from "react"
+import {useSession} from "next-auth/react"
 
 export default function Home(){
 
-    const[ session, setSession]  = useState(false)
-
+    const { data: session } = useSession()
+    if (session) {
+    
 return(
 
-        <div>
-
-        { session ? User(): Guest()}      
+        <div >
+           
+        
+        {session?User({session}):Guest()}
+        
+           
         </div>  
-
-)    
+    
+)   
+    } 
 }
 
-
-//guest
+//Guest
 function Guest(){
     return(
        <main className=" container mx-auto text-center py-40 ">
@@ -33,16 +38,16 @@ function Guest(){
    }
 
    
-   //authourized
- function User(){
+   //Authourized User
+ function User({session}){
        return(
        
        <main className=" container mx-auto text-center py-20">
            <h3 className="text-4xl font-bold underline"> Profile Page </h3>
            
            <div className='details'>
-               <h5>UnKnown</h5>
-               <h5>UnKnown</h5>
+               <h5>session.user.name</h5>
+               <h5>session.user.email</h5>
            </div>
    
            <div className='flex justify-center'>

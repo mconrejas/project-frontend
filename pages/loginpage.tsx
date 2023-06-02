@@ -1,24 +1,24 @@
-import Head from "next/head";
-import Design from '../app/layout/design';
-import Link from 'next/link';
+import Head from "next/head"
+import Design from '../app/layout/design'
+import Link from 'next/link'
 import Styles from '/styles/form.module.css';
+import Image from 'next/image'
 import {AiFillEyeInvisible, AiFillEye} from 'react-icons/ai';
 import {useState} from 'react';
-import Image from "next/image";
-import {useSession,signIn, signOut} from "next-auth/react"
+import {signIn,signOut} from "next-auth/react"
  
 export default function  Login(){
 
   const[show,setShow] = useState(false)
 
 
-  //google handle function
+  //Google Handler function
 
   async function handleGoogleSignin(){
-    signIn('google')
+    signIn('google', {callbackUrl:"http://localhost:3000"} )
   }
     
-  }
+  
 
   return (
     <Design>
@@ -87,4 +87,4 @@ export default function  Login(){
 
     </Design>
   ) 
-}
+  }
