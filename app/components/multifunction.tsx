@@ -1,20 +1,26 @@
-'Use Client'
+'use Client'
 
-import Link from "next/link"
-import {useState} from "react"
-import {useSession} from "next-auth/react"
+import Link from 'next/link'
+import {useState} from 'react'
+import {getSession, useSession,signOut} from 'next-auth/react'
+
 
 export default function Home(){
 
-    const { data: session } = useSession()
-    if (session) {
+    const { data : session } = useSession()
+    if (session){
     
+function handleSignOut(){
+signOut()
+}
+
 return(
 
+    
         <div >
            
         
-        {session?User({session}):Guest()}
+        {session?User({session, handleSignOut}):Guest()}
         
            
         </div>  
@@ -39,19 +45,19 @@ function Guest(){
 
    
    //Authourized User
- function User({session}){
+ function User({session, handleSignOut}){
        return(
        
        <main className=" container mx-auto text-center py-20">
            <h3 className="text-4xl font-bold underline"> Profile Page </h3>
            
            <div className='details'>
-               <h5>session.user.name</h5>
-               <h5>session.user.email</h5>
+               <h5>{session.user.name}</h5>
+               <h5>{session.user.email}</h5>
            </div>
    
            <div className='flex justify-center'>
-               <button className='mt-5 px-10 py-1 rounded-sm bg-indigo-500'> sign out</button>
+               <button onClick={handleSignOut}className='mt-5 px-10 py-1 rounded-sm bg-indigo-500'> sign out</button>
    
            </div>
            <div className="flex justify-center">
@@ -62,3 +68,21 @@ function Guest(){
        );
    }
    
+   export async function getServerSideProps({req}){
+        const session = await getSession({req})
+    
+     if(!session){    
+
+        return{
+            redirect:{
+            destination:'/loginpage',
+            permanent: false
+            }
+            
+        }
+
+    }
+  return{
+    props: {session}
+  }
+}

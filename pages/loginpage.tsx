@@ -9,7 +9,7 @@ import {signIn,signOut} from "next-auth/react"
  
 export default function  Login(){
 
-  const[show,setShow] = useState(false)
+  const[show,setShow] = useState(true)
 
 
   //Google Handler function
@@ -88,3 +88,5 @@ export default function  Login(){
     </Design>
   ) 
   }
+
+  
