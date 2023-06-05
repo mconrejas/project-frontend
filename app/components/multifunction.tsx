@@ -5,18 +5,24 @@ import {useState} from 'react'
 import {getSession, useSession,signOut} from 'next-auth/react'
 
 
+
+interface Session {
+    // Define properties and their types here
+    userId: number;
+    token: string;
+    // ...
+  }
+
+  
 export default function Home(){
 
-    const { data : session } = useSession()
+req: String;
+
+
+    const { data : session } = useSession();
+
     if (session){
-    
-function handleSignOut(){
-signOut()
-}
-
 return(
-
-    
         <div >
            
         
@@ -28,6 +34,10 @@ return(
 )   
     } 
 }
+function handleSignOut(){
+    signOut()
+ 
+    }
 
 //Guest
 function Guest(){
@@ -45,7 +55,7 @@ function Guest(){
 
    
    //Authourized User
- function User({session, handleSignOut}){
+ function User({session,handleSignOut}){
        return(
        
        <main className=" container mx-auto text-center py-20">
@@ -67,6 +77,7 @@ function Guest(){
        </main>
        );
    }
+  
    
    export async function getServerSideProps({req}){
         const session = await getSession({req})
