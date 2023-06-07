@@ -6,17 +6,11 @@ import {getSession, useSession,signOut} from 'next-auth/react'
 
 
 
-interface Session {
-    // Define properties and their types here
-    userId: number;
-    token: string;
-    // ...
-  }
 
   
 export default function Home(){
 
-req: String;
+
 
 
     const { data : session } = useSession();
@@ -55,7 +49,7 @@ function Guest(){
 
    
    //Authourized User
- function User({session,handleSignOut}){
+ function User({session}){
        return(
        
        <main className=" container mx-auto text-center py-20">
@@ -79,8 +73,8 @@ function Guest(){
    }
   
    
-   export async function getServerSideProps({req}){
-        const session = await getSession({req})
+   export async function getServerSideProps(){
+        const session = await getSession()
     
      if(!session){    
 

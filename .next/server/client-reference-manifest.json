@@ -2466,6 +2466,16 @@
       "id": "./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[15].use[1]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[15].use[2]!./node_modules/tailwindcss/tailwind.css",
       "name": "default",
       "chunks": []
+    },
+    "/var/www/newprojectweb/app/Layout.module.css#": {
+      "id": "./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[9].use[1]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[9].use[2]!./app/Layout.module.css",
+      "name": "default",
+      "chunks": []
+    },
+    "/var/www/newprojectweb/styles/form.module.css#": {
+      "id": "./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[9].use[1]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[9].use[2]!./styles/form.module.css",
+      "name": "default",
+      "chunks": []
     }
   }
 }
